@@ -36,6 +36,12 @@
 
     <style>
 
+      span.prazo {
+        color: gray;
+        font-size: 14px;        
+        margin-bottom: 10px;
+      }
+
       section{
         padding: 50px 0 !important; 
       }
@@ -121,7 +127,7 @@
                   </li>
                   <li class="nav-item"><a href="#" class="nav-link">Contatos</a>
                   </li>
-                </ul><a href="#" class="btn navbar-btn btn-outline-primary mt-3 mt-lg-0 ml-lg-3">Vincule uma doação</a>
+                </ul><a href="cadastro.html" class="btn navbar-btn btn-outline-primary mt-3 mt-lg-0 ml-lg-3">Cadastre-se</a>
               </div>
             </div>
           </nav>
@@ -160,7 +166,7 @@
 
               </p>
               <div>
-                  <a href="#" class="btn btn-primary has-shadow has-wide-padding">Mande mensagem </a>
+                  <!-- <a href="#" class="btn btn-primary has-shadow has-wide-padding">Mande mensagem </a> -->
               </div>
             </div>
             <div class="col-md-2 progresso-box">
@@ -253,6 +259,7 @@
                             </div>
                       </div>
                       <div class="col-md-8">
+                        <span class="prazo">Até 04/07/2019</span>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor interdum est vel tincidunt. 
                             Proin dignissim in mi sit amet suscipit. Donec auctor varius neque, eget lacinia metus mattis sed. 
@@ -261,14 +268,31 @@
           
                         </p>
                       </div>
+                      <div class="col-md-12">
+                          <div class="content">
+                            <div class="progress progress-striped">
+                              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                  <span>40% Entregue </span>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-12">
+                          <div class="content">
+                            <div class="progress progress-striped">
+                              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%; background: #3498db">
+                                  <span>60%  Entregue + Agendado </span>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                  <div>
-
+                  <div>                    
                     <div class="input-group mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text">Quantidade de produtos</span>
                       </div>
-                      <input type="text" class="form-control">
+                      <input type="number" class="form-control" min="0" max="5" step="0.5">
                     </div>
 
                     <div class="input-group mb-3">
@@ -277,12 +301,18 @@
                         </div>
                           <input type="date" name="checkin-date">
                     </div>
+                    <div class="input-group mb-3">
+                      <div style="margin: 0 auto">
+                        <input type="checkbox" name="checkin-date">                        
+                        <span style="margin-left: 20px"> Aceito os <a href="#"> Termos de compromisso </a></span>                      
+                      </div>                      
+                    </div>
                   </div>
                   
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Confirmar agendamento</button>
+                <a href="login.html" type="button" class="btn btn-primary">Confirmar agendamento</a>
               </div>
             </div>
           </div>
@@ -295,9 +325,10 @@
           <div class="row">
             <!-- Item-->
             <div class=" col-lg-4" style="margin-bottom: 25px;">
-              <div class="icon"><i class="icon-map"></i></div>
+              <div class="icon"><i class="icon-list"></i></div>
               <div class="text">
-                <h3 class="h4">Pessoas</h3>
+                <h3 class="h4">Feijão</h3>
+                <span class="prazo">Até 10/06/2019</span>
                 <div class="col-md-10">
                     <div class="content">
                       <div class="progress progress-item progress-striped">
@@ -313,9 +344,10 @@
             </div>
             <!-- Item-->
             <div class=" col-lg-4">
-              <div class="icon"><i class="icon-script"></i></div>
+              <div class="icon"><i class="icon-list"></i></div>
               <div class="text">
-                <h3 class="h4">Sistema</h3>
+                <h3 class="h4">Arroz</h3>
+                <span class="prazo">Até 10/06/2019</span>
                 <div class="col-md-10">
                     <div class="content">
                       <div class="progress progress-item progress-striped">
@@ -331,9 +363,10 @@
             </div>
             <!-- Item-->
             <div class=" col-lg-4">
-                <div class="icon"><i class="icon-script"></i></div>
+                <div class="icon"><i class="icon-list"></i></div>
                 <div class="text">
-                  <h3 class="h4">Sistema</h3>
+                  <h3 class="h4">Macarrão</h3>
+                  <span class="prazo">Até 10/06/2019</span>
                   <div class="col-md-10">
                       <div class="content">
                         <div class="progress progress-item progress-striped">
@@ -349,9 +382,10 @@
               </div>
               <!-- Item-->
             <div class=" col-lg-4">
-                <div class="icon"><i class="icon-script"></i></div>
+                <div class="icon"><i class="icon-list"></i></div>
                 <div class="text">
-                  <h3 class="h4">Sistema</h3>
+                  <h3 class="h4">Batata</h3>
+                  <span class="prazo">Até 10/06/2019</span>
                   <div class="col-md-10">
                       <div class="content">
                         <div class="progress progress-item progress-striped">
@@ -367,9 +401,10 @@
               </div>
               <!-- Item-->
             <div class=" col-lg-4">
-                <div class="icon"><i class="icon-script"></i></div>
+                <div class="icon"><i class="icon-list"></i></div>
                 <div class="text">
-                  <h3 class="h4">Sistema</h3>
+                  <h3 class="h4">Botijão</h3>
+                  <span class="prazo">Até 04/07/2019</span>
                   <div class="col-md-10">
                       <div class="content">
                         <div class="progress progress-item progress-striped">
@@ -385,9 +420,10 @@
               </div>
             <!-- Item-->
             <div class=" col-lg-4">
-              <div class="icon"><i class="icon-cityscape"></i></div>
+              <div class="icon"><i class="icon-list"></i></div>
               <div class="text">
-                <h3 class="h4">Instituições</h3>
+                <h3 class="h4">Madeira</h3>
+                <span class="prazo">Até 10/06/2019</span>
                 <div class="col-md-10">
                     <div class="content">
                       <div class="progress progress-item progress-striped">
